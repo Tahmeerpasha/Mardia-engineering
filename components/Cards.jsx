@@ -36,7 +36,7 @@ const Cards = () => {
                         </div>
                         <h1 className="text-gray-600 text-lg font-bold mb-2 pt-10">One Stop Shop for Spares</h1>
                         <p className="text-gray-600 p-2 font-light text-center">
-                            We supply &gt;90% of the spares required in a tire manufacturing plant to over 100+ tire plants across the
+                            We supply {'>'}90% of the spares required in a tire manufacturing plant to over 100+ tire plants across the
                             world.
                         </p>
                     </div>
