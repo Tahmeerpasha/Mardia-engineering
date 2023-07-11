@@ -95,7 +95,7 @@ const FloatingChatbot = () => {
                             <h2 className="text-xl font-bold mb-1">Mardia Engineering Canada</h2>
                             <div className="flex items-center">
                                 <span className="bg-green-500 w-3 h-3 rounded-full mr-2"></span>
-                                <p>We'll reply as soon as we can</p>
+                                <p>We{'\''}ll reply as soon as we can</p>
                             </div>
                         </div>
                         <button
@@ -178,7 +178,7 @@ const FloatingChatbot = () => {
                     className="bg-gray-500 text-white px-4 py-2 rounded-md"
                     onClick={toggleChatbot}
                 >
-                    Let's Chat
+                    Let{'\''}s Chat
                 </button>
             )}
         </div>
