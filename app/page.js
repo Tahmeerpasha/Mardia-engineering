@@ -6,6 +6,7 @@ import Advertise from "@/components/Advertise"
 import Cards from "@/components/Cards"
 import ContactForm from "@/components/ContactForm"
 import FloatingChatbot from "@/components/FloatingChatbot"
+import Footer from "@/components/Footer"
 export default function Home() {
   return (
     <div className="w-full">
@@ -15,6 +16,7 @@ export default function Home() {
       <Cards />
       <ContactForm />
       <FloatingChatbot />
+      <Footer />
     </div>
   )
 }

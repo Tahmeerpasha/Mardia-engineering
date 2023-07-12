@@ -1,5 +1,5 @@
+import Image from 'next/image';
 import React, { useState } from 'react';
-
 const EmojiPicker = ({ onSelectEmoji }) => {
     const emojis = [
         '😀', '😃', '😄', '😁', '😆', '😅', '🤣', '😂', '😊', '😇',
@@ -87,7 +87,7 @@ const FloatingChatbot = () => {
     };
 
     return (
-        <div className={`fixed bottom-4 right-4 transition-right duration-300 ${isOpen ? 'right-0 h-[7.0in] w-[4.7in] bg-white rounded-md' : ''}`}>
+        <div className={`fixed bottom-4 right-4 transition-right duration-300 ${isOpen ? 'right-0 h-[7.0in] w-[4.0in] bg-white rounded-md' : ''}`}>
             {isOpen ? (
                 <div className="flex flex-col h-full">
                     <div className="flex justify-between items-center p-4">
@@ -125,12 +125,7 @@ const FloatingChatbot = () => {
                     </div>
                     <div className="p-4">
                         <div className="flex items-center">
-                            <button
-                                className="text-gray-500 hover:text-gray-700 focus:outline-none mr-2"
-                                onClick={handleToggleEmojiPicker}
-                            >
-                                <span role="img" aria-label="Emoji">😃</span>
-                            </button>
+
                             <form onSubmit={handleSendMessage}>
                                 <input
                                     type="text"
@@ -139,10 +134,10 @@ const FloatingChatbot = () => {
                                     placeholder="Type a message"
                                     className="mr-2 border rounded-md p-2 flex-grow"
                                 />
-                                <input type="submit" value="send" />
+                                {inputText.length != 0 && <input type="submit" value="send" />}
                             </form>
 
-                            <div className="relative inline-block">
+                            <div className="relative ml-2 inline-block">
                                 <label htmlFor="file-input" className="flex items-center">
                                     <svg className="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path>
@@ -155,6 +150,12 @@ const FloatingChatbot = () => {
                                     />
                                 </label>
                             </div>
+                            <button
+                                className="text-gray-500 ml-3 hover:text-gray-700 focus:outline-none mr-2"
+                                onClick={handleToggleEmojiPicker}
+                            >
+                                <span role="img" aria-label="Emoji">😃</span>
+                            </button>
                         </div>
                         {emojiPickerOpen && (
                             <div className="absolute right-0 mt-8 bg-white shadow-md rounded-md p-2">
@@ -174,12 +175,16 @@ const FloatingChatbot = () => {
                     </div>
                 </div>
             ) : (
-                <button
-                    className="bg-gray-500 text-white px-4 py-2 rounded-md"
-                    onClick={toggleChatbot}
-                >
-                    Let{'\''}s Chat
-                </button>
+                <div className='bg-gray-800 flex rounded-full p-5 pl-16 pr-16 justify-between min-w-[80%]' >
+                    <Image height={20} width={20} className='mr-2' src={'/../public/chat.png'} alt="message icon" />
+                    <button
+                        className=" text-white "
+                        onClick={toggleChatbot}
+                    >
+                        Let{'\''}s Chat!
+                    </button>
+                </div>
+
             )}
         </div>
     );

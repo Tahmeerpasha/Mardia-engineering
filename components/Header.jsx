@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
     return (
         <div className="relative w-full">
-            <div className="w-full h-1/2 md:h-full bg-white flex justify-center items-center">
+            <div className=" p-28 bg-white flex justify-center items-center">
                 <img
                     className="h-full"
                     src="https://static.wixstatic.com/media/1a8dae_ceea70d8f1404e4485e2e0ab9eb56c17~mv2.png/v1/fill/w_81,h_93,al_c,lg_1,q_85,enc_auto/me_logo.png"

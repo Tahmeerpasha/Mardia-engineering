@@ -57,7 +57,7 @@ const ContactForm = () => {
 
                 <div className="mb-4">
                     <label htmlFor="email" className="block text-gray-700 font-light mb-2">
-                        Email
+                        Email*
                     </label>
                     <input
                         type="email"
@@ -83,7 +83,7 @@ const ContactForm = () => {
                 </div>
                 <button
                     type="submit"
-                    className="bg-gray-800 text-white font-bold py-2 px-4 rounded focus:outline-none hover:bg-blue-600"
+                    className="bg-gray-800 text-black font-bold py-2 px-4 rounded focus:outline-none hover:bg-white hover:border"
                 >
                     Send
                 </button>
