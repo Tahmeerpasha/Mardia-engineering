@@ -3,11 +3,11 @@ import React from 'react'
 const Hero = () => {
     return (
         <div className='pt-28 sm:pt-0'>
-            <div className=" absolute flex flex-col text-center mt-1 text-white">
-                <h1 className="text-3xl md:text-5xl  sm:text-2xl sm:p-10 lg:pl-96  sm:pt-40 ">
+            <div className=" absolute flex flex-col  text-center mt-1 text-white">
+                <h1 className="text-3xl mb-2 md:text-5xl  sm:text-2xl sm:p-10 lg:pl-96  sm:pt-40 ">
                     MARDIA ENGINEERING CANADA
                 </h1>
-                <p className="text-xl pl-4 pr-4 mt-1 md:text-2xl sm:text-base lg:pl-80 font-light ">
+                <p className="text-xl pl-4 pr-4 mt-0 md:text-2xl sm:text-base lg:pl-80 font-light ">
                     Our Tailor-made spare parts add life to your machines
                 </p>
             </div>

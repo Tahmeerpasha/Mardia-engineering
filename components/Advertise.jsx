@@ -4,8 +4,8 @@ const Advertise = () => {
     return (
         <div className='p-10 sm:flex lg:flex lg:justify-between lg:pr-20 '>
             <h1 className='text-2xl sm:pt-20 lg:text-4xl lg:font-light font-bold '>We work with leading tire manufacturers across the globe</h1>
-            <div className='sm:flex sm:flex-col'>
-                <div className='sm:flex'>
+            <div className='sm:flex sm:flex-col grid grid-cols-1 gap-4 justify-center'>
+                <div className='sm:flex '>
                     <div className="w-fit  m-2">
                         <img
                             className="p-5 m-5 h-[auto] w-[auto]"
@@ -31,7 +31,7 @@ const Advertise = () => {
                 <div className="sm:flex">
                     <div className="w-fit m-2">
                         <img
-                            className="p-5 m-5 h-[auto] w-[auto]"
+                            className="p-5 m-5 h-[auto] w-[auto] md:mt-0 md:mb-0"
                             src="https://static.wixstatic.com/media/1a8dae_5aafff71b9e3416ebd96dc8d97615fdd~mv2.png/v1/fill/w_225,h_29,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/BridgestoneMark-Color.png"
                             alt="bridgestone"
                         />

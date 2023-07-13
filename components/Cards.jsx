@@ -7,7 +7,7 @@ const Cards = () => {
 
             <div className="relative">
                 <img
-                    className="w-[150vh] h-[150vh] sm:h-[40vh] sm:w-full md:w-full md:h-[40vh] lg:h-[70vh] -z-10"
+                    className="w-[150vh] h-[170vh] sm:h-[90vh] sm:w-full md:w-full md:h-[70vh] lg:h-[70vh] -z-10"
                     src="https://static.wixstatic.com/media/4b2a574b8a8e4c9a85009f628f3a2cf6.jpg/v1/fill/w_1839,h_741,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4b2a574b8a8e4c9a85009f628f3a2cf6.jpg"
                     alt="Background"
                 />
