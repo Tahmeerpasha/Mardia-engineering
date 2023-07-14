@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image';
 import React, { useState } from 'react';
+
 const EmojiPicker = ({ onSelectEmoji }) => {
     const emojis = [
         '😀', '😃', '😄', '😁', '😆', '😅', '🤣', '😂', '😊', '😇',
@@ -88,7 +89,7 @@ const Chat = () => {
     };
 
     return (
-        <div className={`fixed bottom-4 right-4 transition-right duration-300 ${isOpen ? 'right-0 h-[80%] w-[90%] sm:h-[7.0in] sm:w-[4.0in] lg:w-[4.5in]  bg-white rounded-md' : ''}`}>
+        <div className={`fixed bottom-4 right-4 transition-right duration-300 ${isOpen ? 'right-0 h-[80%] w-[90%] sm:h-[7.0in] sm:w-[4.0in] lg:w-[4.5in] lg:h-[6.0in]  bg-white rounded-md' : ''}`}>
             {isOpen ? (
                 <div className="flex flex-col h-full">
                     <div className="flex justify-between items-center p-4">
@@ -126,7 +127,6 @@ const Chat = () => {
                     </div>
                     <div className="p-4">
                         <div className="flex items-center">
-
                             <form onSubmit={handleSendMessage} className='flex'>
                                 <input
                                     type="text"
@@ -135,9 +135,8 @@ const Chat = () => {
                                     placeholder="Type a message...."
                                     className="mr-2 border rounded-md p-2 flex-grow"
                                 />
-                                {inputText.length != 0 && <input type="submit" value="send" className='bg-gray-600 p-2 rounded-xl md:w-[8vw] text-white' />}
+                                {inputText.length !== 0 && <input type="submit" value="send" className='bg-gray-600 p-2 rounded-xl md:w-[8vw] text-white' />}
                             </form>
-
                             <div className="relative ml-2 inline-block">
                                 <label htmlFor="file-input" className="flex items-center">
                                     <svg className="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -185,7 +184,6 @@ const Chat = () => {
                         <span className='hidden sm:block'>Let{'\''}s Chat!</span>
                     </button>
                 </div>
-
             )}
         </div>
     );
